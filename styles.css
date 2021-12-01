@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+}
+
+.col {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 56px;
+}
+
+.col--orange {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+}
+
+.col--dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.col--very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+}
+
+.col__image {
+
+}
+
+.col__title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+}
+
+.col__text {
+    margin-bottom: 32px;
+}
+
+.col__cta {
+    align-self: flex-start;
+    margin-top: 64px;
+    padding: 12px 32px;
+    background-color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 24px;
+    transition: all 0.2s ease;
+}
+
+.col--orange .col__cta {
+    color: hsl(31, 77%, 52%);
+}
+
+.col--dark-cyan .col__cta {
+    color: hsl(184, 100%, 22%);
+}
+
+.col--very-dark-cyan .col__cta {
+    color: hsl(179, 100%, 13%);
+}
+
+.col__cta:hover,
+.col__cta:active {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+}
+
+@media (max-width: 1175px) {
+    .card {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1019px) {
+    .card {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .col--orange {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .col--very-dark-cyan {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .col__cta {
+        padding: 12px 24px;
+        margin-top: 24px;
+    }
+}
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+    margin-top: 66px;
+    color: hsl(179, 100%, 13%);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:active {
+    color: #ff1b68;
+}
