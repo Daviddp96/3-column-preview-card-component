@@ -75,6 +75,8 @@ main {
 
 .col__text {
     margin-bottom: 32px;
+    width: 90%;
+    line-height: 1.6rem;
 }
 
 .col__cta {
